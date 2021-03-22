@@ -1,0 +1,49 @@
+<!--pages/home/homepage.wxml-->
+<view class="header">
+  <view class="table1">
+  CharCan
+</view>
+ <view>
+   <image class ="moresetting" src="/images/more.png"></image>
+ </view>
+</view>
+
+<view>
+  <image class="imagesize" src="/images/bg.jpg"></image>
+</view>
+
+
+
+<view class="bottom">
+  <view class="box_item">
+    <view class="box_img">
+      <image class="box_img" src="/images/icon.png"></image>
+    </view>
+    <view class="box_text">
+      Home
+    </view>
+  </view>
+  <view class="box_item">
+   <view class="box_img">
+     <image class="box_img" src="/images/icon.png"></image>
+   </view>
+   <view class="box_text">
+      Search
+   </view>
+  </view>
+  <view class="box_item">
+   <view class="box_img">
+     <image class="box_img" src="/images/icon.png"></image>
+   </view>
+   <view class="box_text">
+      Favorites
+   </view>
+  </view>
+
+
+
+</view>
+
+
+
+

@@ -1,0 +1,50 @@
+/* pages/home/homepage.wxss */
+.imagesize{
+  height:438px;
+  width:375px;
+}
+.moresetting{
+  float:right;
+  height: 50px;
+  width: 40px;
+  margin-right: 15px;
+  margin-top:-50px;
+}
+.table1{
+  font-size:30px ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;  
+  background-color:#e6928d;
+  padding:10px 20px;
+}
+.swiperpics{
+  width: 750rpx;
+  height: 300rpx;
+  position: absolute;
+  margin-top:-100px;
+  padding:60px 80px;
+}
+.sptext{
+  font-family: STKaiti;
+}
+.bottom{
+  float:bottom;
+  width: 375px;
+}
+.box_item{
+  float: left;
+  height: 100px;
+  width: 70px;
+  padding: 10px 27.5px; 
+}
+.box_img{
+   height: 50px;
+   width: 50px;
+   padding: 0px 5px 5px;
+}
+.box_text{
+  text-align: center;
+  color:#25a5cc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:20px;
+}
