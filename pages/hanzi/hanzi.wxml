@@ -1,0 +1,7 @@
+<!--pages/hanzi/hanzi.wxml-->
+<view class="topbar"></view>
+<view class="mainpage">
+  <text>班</text>
+  <text>释义</text>
+  <view bindtap="favorite">我喜欢</view>
+</view>

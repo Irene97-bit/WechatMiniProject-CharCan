@@ -3,6 +3,17 @@
   height:438px;
   width:375px;
 }
+.topimage{
+  height:250px;
+}
+
+.covertext{
+  text-align: center;
+  height: 100px;
+  color:#3b4346;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:50px;
+}
 .moresetting{
   float:right;
   height: 50px;
@@ -17,12 +28,13 @@
   background-color:#e6928d;
   padding:10px 20px;
 }
-.swiperpics{
-  width: 750rpx;
-  height: 300rpx;
-  position: absolute;
-  margin-top:-100px;
-  padding:60px 80px;
+
+.swiper{
+  width: 100%;
+  height: 117%;
+}
+image{
+  width: 100%;
 }
 .sptext{
   font-family: STKaiti;
@@ -46,5 +58,31 @@
   text-align: center;
   color:#25a5cc;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size:20px;
+  font-size:18px;
+}
+.space{
+  height: 60px;
+}
+.tab-bar-title{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  height: 60rpx;
+  text-align: center;
+  position: relative;
+  background-color:#fff;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.tab-bar-title__selected{
+  font-size: 15px;
+  color:#537364;
+  font-weight: bold;
+}
+.item-title{
+  font-size: 15px;
+  color:#537364;
+  font-weight: bold;
+  padding:10px;
 }

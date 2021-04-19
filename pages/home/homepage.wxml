@@ -1,49 +1,58 @@
 <!--pages/home/homepage.wxml-->
-<view class="header">
-  <view class="table1">
+<view class="topimage">
+      <image  class='imagesize' src="/images/bg.jpeg" ></image>
+</view>
+
+<cover-view  class="covertext">
   CharCan
-</view>
- <view>
-   <image class ="moresetting" src="/images/more.png"></image>
- </view>
-</view>
+</cover-view>
 
-<view>
-  <image class="imagesize" src="/images/bg.jpg"></image>
-</view>
+<button bindtap = "explore">EXPLORE</button>
 
-
-
-<view class="bottom">
-  <view class="box_item">
-    <view class="box_img">
-      <image class="box_img" src="/images/icon.png"></image>
+  <!--<view class="page">
+    <view class="page__hd">
+        <view class="page__title">search</view>
+        <view class="page__desc">bar</view>
     </view>
-    <view class="box_text">
-      Home
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
     </view>
-  </view>
-  <view class="box_item">
-   <view class="box_img">
-     <image class="box_img" src="/images/icon.png"></image>
-   </view>
-   <view class="box_text">
-      Search
-   </view>
-  </view>
-  <view class="box_item">
-   <view class="box_img">
-     <image class="box_img" src="/images/icon.png"></image>
-   </view>
-   <view class="box_text">
-      Favorites
-   </view>
-  </view>
+</view>-->
 
-
+<view class="space">
 
 </view>
 
+<view class="page">
+<mp-tabs 
+  tabs="{{tabs}}" 
+  activeTab="{{activeTab}}" 
+  swiperClass="weui-tabs-swiper"
+  bindtabclick="onTabClick"
+  bindchange="onChange"
+  tab-class="tab-bar-title"
+  activeClass="tab-bar-title__selected"
+  tab-underline-color="#f5725e"
+  
+>
+  <block wx:for="{{tabs}}" wx:key="title">
+    <view class="tab-content" data-set="{{item}}" slot="tab-content-{{index}}" bind:tap="handleClick" >
+      <view class="item-title">
+        {{item.title2}}
+      </view>
+      <image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+  </block>
+</mp-tabs>
+</view>
+
+<!-- <view class="page">
+    <view class="page__hd">
+        <view class="page__title">Tabbar</view>
+        <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
+    </view>
+    <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view> -->
 
 
 

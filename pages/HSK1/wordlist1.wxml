@@ -1,0 +1,57 @@
+<!--pages/HSK1/wordlist1.wxml-->
+<view class="topbar">
+  <view class="topbar-text">HSK1</view>
+</view>
+<view class="container">
+</view>
+<view class="course-list">
+  <view class="course-item">
+    <view class="course-image">
+      <image class="course-image" src="/images/HSK1.png"></image>
+    </view>
+    <view class="course-text">
+      <view class="course-title">
+        <text>HSK1 Wordlist</text>
+      </view>
+      <view class="course-des">
+        150 words in total
+      </view>
+      <view class="course-des">
+        level: for beginners
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="divider">
+</view>
+
+<view class="listbox">
+  <view class="listitem" wx:for="{{hsk1}}" wx:key='id'>
+    <view class="listhanzi">{{item.hanzi}}</view>
+    <view class="list">
+      <view class="list-topright">
+        <view class="listpinyin-icon">pinyin</view>
+        <view class="listpinyin">{{item.pinyin}}</view>
+        <view class="icon"><image class="icon-image" src="/images/my.png"></image></view>  
+      </view>
+      <view class="list-bottomright">
+        <view class="listexp-icon">DEF</view>
+        <view class="listexp">{{item.explanation}}</view>
+      </view>
+    </view>
+   
+  </view>
+  <view class="listitem">
+    <view class="listhanzi">你</view>
+    <view class="list">
+      <view class="list-topright">
+        <view class="listpinyin">nǐ</view>
+        <view class="icon"><image class="icon-image" src="/images/my.png" bindtap="favorite"></image></view>
+      </view>
+      <view class="listexp">you (singular)</view>
+    </view>
+    
+  </view>
+</view>
+

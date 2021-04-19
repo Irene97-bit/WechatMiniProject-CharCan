@@ -1,0 +1,14 @@
+/* pages/hanzi/hanzi.wxss */
+.topbar{
+  width: 375px;
+  height: 100px;
+  background-color: tomato;
+  /*颜色要改*/
+}
+
+.mainpage{
+  width: 375px;
+  height: 500px;
+  background-color: rgb(253, 162, 146);
+  display: flex;
+}

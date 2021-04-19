@@ -1,0 +1,42 @@
+<!--pages/accounts/accounts.wxml-->
+<view class="topbar">
+</view>
+
+<view class="container">
+  <view class="container_account">
+<view class="container_image"></view>
+<view class="container_text">
+  <text>Irene</text>
+</view>
+  </view>
+</view>
+
+<view class="page">
+    <view class="page__bd">
+
+        <mp-cells title="个人信息">
+            <mp-cell value="选择字库" footer="HSK1级">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell value="目标完成" footer="30%">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+        </mp-cells>
+
+        <mp-cells title="更多功能">
+            <mp-cell link url="../hanzi/hanzi" hover value="收藏" footer="52个汉字">
+                <image slot="title" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell link url="../index" hover value="心愿单" footer="20个汉字">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell link url="../index" hover value="设置" footer=" ">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell link url="../index" hover value="建议反馈" footer=" ">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+        </mp-cells>
+
+    </view>
+</view>

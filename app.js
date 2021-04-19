@@ -10,6 +10,21 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code)
+        wx.request({
+          url: 'https://2000022764.zhangqx.com/getopenid',
+          method:'POST',
+          data:{
+            'code':res.code
+          },
+          header:{
+            'content-type':'application/json'
+          },
+          success(res){
+            console.log(res.data)
+            wx.setStorageSync('data', res.data)
+          }
+        })
       }
     })
   },

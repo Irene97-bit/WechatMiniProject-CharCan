@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+    "mp-tabs": "@miniprogram-component-plus/tabs",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar"
+    
+  },
+  "navigationBarTitleText": "UI组件库"
 }

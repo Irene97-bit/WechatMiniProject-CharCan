@@ -1,0 +1,32 @@
+<!--pages/course/course.wxml-->
+<view class="topbar">
+
+</view>
+<view class="container">
+<view class="container_text">✨Courses</view>
+</view>
+
+<view class="page">
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+</view>
+
+<view class="course-list">
+  <view class="course-item" bindtap="HSK1page">
+    <view class="course-image">
+      <image class="course-image" src="/images/HSK1.png"></image>
+    </view>
+    <view class="course-text">
+      <view class="course-title">
+        <text>HSK1 Wordlist</text>
+      </view>
+      <view class="course-des">
+        <text>Chinese Proficiency Test(HSK), an international standardized test of Chinese language proficiency,assesses non-native Chinese speakers’ abilities in using the Chinese language in their daily, academic and professional lives. </text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

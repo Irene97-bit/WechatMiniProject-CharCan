@@ -1,0 +1,35 @@
+/* pages/accounts/accounts.wxss */
+.topbar{
+  background-image: url(https://i.loli.net/2021/04/02/EXadjZ837vzhlUq.jpg);
+  width: 375px;
+  height: 198px;
+}
+
+.container{
+  width: 375px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: white;
+  margin-top:-70px;
+}
+.container_account{
+  display: flex;
+  width: 375px;
+  height: 100px;
+  justify-content:center;
+}
+.container_image{
+  width: 60px;
+  height: 60px;
+  background-color: teal;
+  margin-top: 20px;
+}
+
+.container_text{
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  color:rgb(49, 124, 150);
+  font-weight: bolder;
+  margin-left: 20px;
+}
