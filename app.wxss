@@ -1,2 +1,5 @@
 /**app.wxss**/
+page {
+  font-family:"hanzifont";        /*微信小程序中，使用rpx做单位*/
+}
 

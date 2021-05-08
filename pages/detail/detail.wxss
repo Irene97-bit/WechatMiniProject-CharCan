@@ -1,0 +1,12 @@
+/* pages/detail/detail.wxss */
+.main {
+  position: relative;
+  /* 750rpx 是微信定义的屏幕宽度，这里设置这个值，保证一个正方形 */
+  height: 750rpx;
+  border: 1px solid var(--theme-color);
+  background-color: white;
+}
+.svg-container  {
+  height: 100%;
+  width: 100%;
+}

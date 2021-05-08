@@ -2,13 +2,12 @@
 .topbar{
   width: 375px;
   height: 120px;
-  background-color: rgb(245, 147, 49);
+  background-color: rgb(248, 183, 117);
 }
 .topbar-text{
   color:white;
   font-size:60px;
   font-weight: bolder;
-  margin-left: 20px;
   padding:30px;
 }
 .container{
@@ -20,104 +19,111 @@
   margin-top:-20px;
 }
 .course-list{
-  margin-left: 50px;
   width: 375px;
   flex-direction: column;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .course-item{
+
   margin-top: 30px;
   width:300px;
   height: 100px;
-
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .course-image{
   width: 80px;
   height: 100px;
-
-  margin-right: 20px;
-
+  margin-left: 10px;
 }
 
 .course-text{
   width: 200px;
   height: 100px;
-
 }
 
 .course-title{
   width: 200px;
   height: 40px;
-
   font-size:20px;
   color:black;
   font-weight: bolder;
   justify-content: center;
+  text-align: center;
 }
 .course-des{
   width: 200px;
   height: 30px;
-
+  text-align: center;
   font-size:15px;
   color:black;
   overflow: hidden;
 }
 
 .divider{
-  margin-left: 38px;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 300px;
   height: 10px;
-  background-color: rgb(245, 147, 49);
+  background-color: rgb(248, 183, 117);
   border-radius: 20px;
+  margin-left: 35px;
 }
 
 .listbox{
-  
-  width: 375px;
-  height: 400px;
+  margin-left: 37.5px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: space-around;
 }
 .listitem{
+
   margin-top: 20px;
-  width: 300px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   display: flex;
   flex-direction:row;
   border-radius: 20px;
   border:1px solid  rgb(243, 213, 182);
 }
+.list{
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction:column;
+}
 .listhanzi{
-  width: 100px;
+  margin-left: 30px;
+  width: 150px;
   height: 100px;
   font-size: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-
-}
-.list{
-  width: 200px;
-  height: 100px;
-  display: flex;
-  flex-direction:column;
+  /*justify-content: center;*/
 }
 
-.list-topright{
-  width: 200px;
-  height: 50px;
+.list-bottom{
+  margin-left: 30px;
+  width: 150px;
+  height: 20px;
   display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+}
+.list-bottombar{
+  display: flex;
+  width: 180px;
+  height: 20px;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 
 }
 .listpinyin-icon{
@@ -129,21 +135,38 @@
   justify-content: center;
   font-size: 14px;
   color:rgb(19, 154, 196);
+
 }
 .listpinyin{
-  width: 90px;
-  height: 50px;
+  width: 140px;
+  height: 20px;
   margin-left: 10px;
   display: flex;
   align-items: center;
+  /*justify-content: center;*/
 
 }
-.icon{
+.icon-area{
+ margin-right: 20px;
  width: 50px;
- height: 50px;
+ height: 150px;
  display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
  align-items: center;
  justify-content: center;
+}
+.icon-star{
+  width: 30px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+icon-more{
+  width: 30px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .icon-image{
   width: 30px;

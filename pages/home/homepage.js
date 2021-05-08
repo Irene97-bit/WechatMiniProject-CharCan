@@ -1,25 +1,14 @@
 // pages/home/homepage.js
 Page({
-    /**
-   * tabbar
-   */
-  /*data: {
-    list: [{
-        "text": "对话",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my-selected.png",
-        dot: true
-    },
-    {
-        "text": "设置",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my.png",
-        badge: 'New'
-    }]
-},
-tabChange(e) {
-    console.log('tab change', e)
-},*/
+  data:{
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    userInfo: {},
+    hasUserInfo: false,
+    canIUseGetUserProfile: false,
+    //font//
+    loaded :false,
+    fontFamily: 'hanzifont',
+  },
   
 
   /**
@@ -30,22 +19,67 @@ tabChange(e) {
    * 生命周期函数--监听页面加载
    * 
    */
+  toHanzi:function(options){
+   wx.navigateTo({
+     url: '../HSK1/wordlist1',
+   })
+  },
+  toHSK:function(options){
+    wx.navigateTo({
+      url: '../HSK1/wordlist1',
+    })
+   },
+   tofav:function(options){
+    wx.navigateTo({
+      url: '../favorite/favorite',
+    })
+   },
 
   explore:function(options){
     wx.navigateTo({
-      url: '../hanzi/hanzi',
+      url: '../signup/signup',
     })
   },
   onLoad: function (options) {
-    let that = this;
-    console.log("onLoad");
-    wx.request({
-      url: 'http://114.115.142.135/getcode',
-      success(res){
-        console.log(res.data)
-        that.setData({
-          myList:res.data.data
+    if (wx.getUserProfile) {
+      this.setData({
+        canIUseGetUserProfile: true
+      })
+    }
+  },
+
+  loadFontFace:function(){
+    const self = this
+    wx.loadFontFace({
+      family: this.data.fontFamily,
+      source: 'url("https://2000022764.zhangqx.com:9999/fonttype/HYKuiSuW.ttf")',
+      success(res) {
+        console.log("success")
+        console.log(res.status)
+        self.setData({ loaded: true })
+      },
+      fail: function(res) {
+        console.log("fail")
+        console.log(res.status)
+      },
+      complete: function(res) {
+        console.log("complete")
+        console.log(res.status)
+      }
+    });
+    },
+
+  getUserProfile(e) {
+    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
+    // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
+    wx.getUserProfile({
+      desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      success: (res) => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
         })
+        console.log(res)
       }
     })
   },

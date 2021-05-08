@@ -1,0 +1,32 @@
+<!--pages/practise/practise.wxml-->
+<view class="topbar"></view>
+<view class="main">
+    <view class="svg-container">
+        <image bindtap='tapSvg' src='{{svgBase64}}' style="width: 100%;height:100%;"/>
+    </view>
+  </view>
+<view class="mainpage">
+<view class="item"  wx:for="{{hsk1word}}" wx:key="index">
+<view class="hz">
+  <view class="hanzi">{{item.hanzi}}</view>
+  <view class="starlogo" bindtap="toCollect">
+    <block wx:if="{{isCollect == false}}"><image class="star" src="/images/star-g.png"></image></block>
+    <block wx:elif="{{isCollect == true}}"><image class="star" src="/images/star-b.png"></image></block>
+  </view>
+</view>
+<view class="py">
+  <view class="pylogo">pinyin</view>
+  <view class="pinyin">{{item.pinyin}}</view>
+</view>
+<view class="exlogo">explanation</view>
+<view class="explanation">{{item.explanation}}</view>
+</view>
+</view>
+<!--<view class="container">
+  <view class="handCenter">
+    <canvas class="handWriting" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove"
+      bindtouchend="uploadScaleEnd" bindtap="mouseDown" canvas-id="handWriting">
+    </canvas>
+  </view>
+  <button style="margin-top:60rpx" catchtap="retDraw">rewrite</button>
+</view>-->

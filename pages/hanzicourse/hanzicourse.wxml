@@ -1,0 +1,26 @@
+<!--pages/hanzicourse/hanzicourse.wxml-->
+<view class="topbar">
+
+</view>
+<view class="container">
+<view class="container_text">汉字</view>
+</view>
+
+<view class="course-list">
+  <view class="course-item" bindtap="toDetail">
+    <view class="course-image">
+      <image class="course-image" src="/images/HSK1.png"></image>
+    </view>
+    <view class="course-text">
+      <view class="course-title">
+        <text>HSK1 单词表</text>
+      </view>
+      <view class="course-des">
+        <text> 等待填写 </text>
+      </view>
+    </view>
+    <view class="course-icon">
+      <image class="icon" src="/images/add-g.png" bindtap="collect"></image>
+    </view>
+  </view>
+</view>

@@ -26,32 +26,26 @@
 <view class="divider">
 </view>
 
-<view class="listbox">
-  <view class="listitem" wx:for="{{hsk1}}" wx:key='id'>
-    <view class="listhanzi">{{item.hanzi}}</view>
-    <view class="list">
-      <view class="list-topright">
+<view class="listbox" wx:for="{{hsk1}}" wx:key="index">
+  <view class="listitem">
+    <view class="list" bindtap="toDetail" data-index="{{index}}">
+      <view class="listhanzi">{{item.hanzi}}</view>
+    <view class="list-bottom">
+      <view class="list-bottombar"> 
         <view class="listpinyin-icon">pinyin</view>
         <view class="listpinyin">{{item.pinyin}}</view>
-        <view class="icon"><image class="icon-image" src="/images/my.png"></image></view>  
-      </view>
-      <view class="list-bottomright">
-        <view class="listexp-icon">DEF</view>
-        <view class="listexp">{{item.explanation}}</view>
       </view>
     </view>
-   
-  </view>
-  <view class="listitem">
-    <view class="listhanzi">你</view>
-    <view class="list">
-      <view class="list-topright">
-        <view class="listpinyin">nǐ</view>
-        <view class="icon"><image class="icon-image" src="/images/my.png" bindtap="favorite"></image></view>
-      </view>
-      <view class="listexp">you (singular)</view>
     </view>
-    
+
+  <view class="icon-area">
+    <view class="icon-star" bindtap="star" data-index="{{index}}">
+      <block wx:if="{{isCollect == false}}"><image class="icon-image" src="/images/star-g.png"></image></block>
+      <block wx:elif="{{isCollect == true}}"><image class="icon-image" src="/images/star-b.png"></image></block>
+    </view>
+    <view class="icon-more" bindtap="toDetail" data-index="{{index}}">
+      <image class="icon-image" src="/images/more.png"></image>
+    </view>
   </view>
 </view>
-
+</view>

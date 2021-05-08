@@ -1,7 +1,24 @@
 <!--pages/hanzi/hanzi.wxml-->
-<view class="topbar"></view>
-<view class="mainpage">
-  <text>班</text>
-  <text>释义</text>
-  <view bindtap="favorite">我喜欢</view>
-</view>
+<view class="title">汉字识字小程序</view>
+	<view class="js-char-form char-form">
+        <view class="char-form-item char-form-text">请输入汉字</view>
+        <view class="char-form-item char-form-text">
+            <input type="text" class="js-char char-input" size="1" maxlength="1" value="{{inputstr}}" bindinput="inputstrBtn" />
+        </view>
+        <view class="char-form-item">
+            <button type="submit" class="update-btn" bindtap="updateCharacter">确定</button>
+        </view>
+    </view>
+    
+	<view class="actions clear_both">
+		<button class="showCharacter" bindtap="showCharacter">显示笔画</button>
+		<button class="hideCharacter" bindtap="hideCharacter">隐藏笔画</button>
+		<button class="js-animate" bindtap="charDataLoader">播放动画</button>
+		<button class="js-quiz" bindtap="copybook">临摹</button>
+    </view>
+	<view id="target">
+        <hanzi-writer-view id="hz-writer" width="300" height="300" />
+    </view>
+    <view class="actions clear_both">
+        <button class="showCharacter read" bindtap="readStrokes">笔画</button>
+	</view>

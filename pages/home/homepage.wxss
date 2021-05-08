@@ -1,25 +1,135 @@
 /* pages/home/homepage.wxss */
 .imagesize{
-  height:438px;
-  width:375px;
+  width: 750rpx;
+  /*height: 536rpx;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-image: url(http://2000022764.zhangqx.com:9999/images/tgpx.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.topimage{
-  height:250px;
+.cspace{
+  height: 160px;
+  width: 650rpx;
+}
+.coverinfo{
+  border-radius: 30px;
+  background-color:white;
+  width: 600rpx;
+  height: 220rpx;
+  padding: 0,10px,10,0;
+  /*box-shadow:0rpx 1rpx 3rpx 3rpx #c8c3c3;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.covertext{
-  text-align: center;
-  height: 100px;
-  color:#3b4346;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size:50px;
+.info{
+  width: 500rpx
 }
-.moresetting{
-  float:right;
-  height: 50px;
-  width: 40px;
-  margin-right: 15px;
-  margin-top:-50px;
+.profile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.covercourse{
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 30px;
+  background-color:white;
+  width: 600rpx;
+  height: 400rpx;
+  padding: 0,10px,10,0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.coverpart{
+  margin-top: 20px;
+  border-radius: 30px;
+  background-color:white;
+  width: 600rpx;
+  /*padding: 0,10px,10,0;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.part{
+  width: 270rpx;
+  height: 270rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+}
+.partimage{
+  width: 270rpx;
+  height: 270rpx;
+}
+.stroke{
+  width: 280rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divide{
+  width: 2rpx;
+  height: 400rpx;
+  background-color: lightgray;
+}
+.hanzi{
+  width: 280rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-loaded {
+  font-family: "hanzifont";
+}
+.page-body-info {
+  align-items: center;
+  
+}
+
+.title{
+  font-family:"hanzifont";
+  font-size: 30px;
+  color:rgb(55,177,201);
+}
+.coverphoto{
+  width: 280rpx;
+  height: 400rpx;
+  overflow: hidden;
+}
+/*.hanziphotosize{
+  overflow: hidden;
+  width: 260rpx;
+  height: 536rpx;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-image: url(http://2000022764.zhangqx.com:9999/images/hanziwhite.png);
+
+}*/
+.coversearch{
+  margin-top: 20px;
+  border-radius: 30px;
+  background-color:white;
+  width: 600rpx;
+  overflow: hidden;
 }
 .table1{
   font-size:30px ;
@@ -85,4 +195,12 @@ image{
   color:#537364;
   font-weight: bold;
   padding:10px;
+}
+
+.waiting{
+  margin-top: 40px;
+  font-size: 15px;
+  color:black;
+  font-weight: lighter;
+  padding:10px; 
 }

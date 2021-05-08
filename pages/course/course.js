@@ -1,31 +1,15 @@
 // pages/course/course.js
 Page({
-
-  data: {
-        inputShowed: false,
-        inputVal: ""
-    },
-    onLoad() {
-        this.setData({
-            search: this.search.bind(this)
-        })
-    },
-    search: function (value) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
-            }, 200)
-        })
-    },
-    selectResult: function (e) {
-        console.log('select result', e.detail)
-    },
-
   /**
    * 页面的初始数据
    */
   data: {
 
+  },
+  toHanzicourse:function(options){
+    wx.navigateTo({
+      url: '../hanzicourse/hanzicourse',
+    })
   },
 
   /**
@@ -34,7 +18,22 @@ Page({
   onLoad: function (options) {
 
   },
+  /**collect:function(options){
+    wx.request({
+      url: 'https://2000022764.zhangqx.com/courselist',
+      method:'POST',
+      data: {
+        openid: wx.getStorageSync('data').openid,
+        favorite: this.data.hsk1[index].hanzi,
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success (res) {
 
+      }
+    })
+  },*/
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,35 +1,49 @@
 /* pages/accounts/accounts.wxss */
 .topbar{
-  background-image: url(https://i.loli.net/2021/04/02/EXadjZ837vzhlUq.jpg);
+  background-image: url(http://2000022764.zhangqx.com:9999/images/bg-s.png);
   width: 375px;
   height: 198px;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .container{
   width: 375px;
-  height: 100px;
-  border-radius: 30px;
+  height: 150px;
+  border-radius: 40px;
   background-color: white;
   margin-top:-70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_account{
   display: flex;
-  width: 375px;
+  width: 100px;
   height: 100px;
   justify-content:center;
+  align-items: center;
+  flex-direction: column;
 }
 .container_image{
   width: 60px;
   height: 60px;
-  background-color: teal;
-  margin-top: 20px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .container_text{
+  margin-top: 10px;
   font-size: 20px;
   text-align: center;
-  line-height: 60px;
-  color:rgb(49, 124, 150);
+  color:rgb(67,106,121);
   font-weight: bolder;
-  margin-left: 20px;
+}
+.mainpage{
+  width: 375px;
+  display: flex;
+  justify-content: center;
+}
+.userinfo{
+  width: 300px;
 }

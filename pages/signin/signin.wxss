@@ -1,0 +1,18 @@
+/* pages/signin/signin.wxss */
+.topbar{
+
+}
+.topbar-image{
+  width: 375px;
+  height: 200px;
+}
+.slogan{
+  margin-left: 40px;
+  font-size: 30px;
+  color:rgb(136, 159, 43);
+}
+
+.signup{
+ margin-top: 20px;
+}
+

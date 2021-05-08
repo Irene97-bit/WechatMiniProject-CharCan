@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@miniprogram-component-plus/tabs": "^1.0.0"
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "hanzi-writer-data": "^2.0.1",
+    "hanzi-writer-miniprogram": "^1.1.0"
   }
 }

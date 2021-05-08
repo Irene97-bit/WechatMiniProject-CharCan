@@ -1,0 +1,201 @@
+/* pages/practise/practise.wxss */
+.main {
+  position: relative;
+  /* 750rpx 是微信定义的屏幕宽度，这里设置这个值，保证一个正方形 */
+  height: 750rpx;
+  border: 1px solid var(--theme-color);
+  background-color: white;
+}
+.svg-container  {
+  height: 100%;
+  width: 100%;
+}
+
+.handWriting {
+  width: 600rpx;
+  height: 600rpx;
+}
+ 
+.handRight {
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.handCenter {
+  width: 600rpx;
+  height: 600rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  flex: 5;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+ 
+.handTitle {
+  transform: rotate(90deg);
+  flex: 1;
+  color: #666;
+}
+ 
+.handBtn button {
+  font-size: 28rpx;
+}
+ 
+.handBtn {
+  height: 95vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex: 1;
+}
+ 
+.delBtn {
+  position: absolute;
+  top: 250rpx;
+  left: 0rpx;
+  transform: rotate(90deg);
+  color: #180303;
+}
+ 
+.delBtn image {
+  position: absolute;
+  top: 13rpx;
+  left: 25rpx;
+}
+ 
+.subBtn {
+  position: absolute;
+  bottom: 52rpx;
+  left: -3rpx;
+  display: inline-flex;
+  transform: rotate(90deg);
+  background: #008ef6;
+  color: #fff;
+  margin-bottom: 30rpx;
+  text-align: center;
+  justify-content: center;
+}
+ 
+.black-select {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 25rpx;
+
+}
+.black-select.color_select {
+  width: 90rpx;
+  height: 90rpx;
+  top: 30rpx;
+  left: 10rpx;
+}
+.red-select {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top:140rpx;
+  left:25rpx;
+}
+.red-select.color_select {
+  width: 90rpx;
+  height: 90rpx;
+  top: 120rpx;
+  left: 10rpx;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topbar{
+  background-color: rgb(142,190,173);
+  height: 70px;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.mainpage{
+  background-color: rgb(238,236,225);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.hz{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hanzi{
+  font-size:50px;
+}
+.starlogo{
+  width: 70px;
+  height: 50px;
+}
+.star{
+  width: 50px;
+  height: 50px;
+  align-items: right;
+}
+
+.py{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pylogo{
+  width: 60px;
+  height: 28px;
+  background-color: rgb(55, 171,201);
+  border-radius: 30px;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.pinyin{
+  margin-left: 10px;
+}
+.exlogo{
+  margin-top: 10px;
+  width: 100px;
+  height: 28px;
+  background-color: rgb(55, 171,201);
+  border-radius: 30px;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.explanation{
+  font-size:20px;
+  padding: 4px;
+}
+
+.stroke{
+  width: 300px;
+  height: 60px;
+}
+
+.play{
+  width: 375px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playbuttom{
+  width: 50px;
+  height: 50px;
+}

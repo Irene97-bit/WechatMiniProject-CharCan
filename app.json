@@ -1,10 +1,17 @@
 {
   "pages": [
     "pages/home/homepage",
+    "pages/course/course",
+    
+    "pages/favorite/favorite",
     "pages/HSK1/wordlist1",
+    "pages/detail/detail",
     "pages/hanzi/hanzi",
+    "pages/practise/practise",
+    "pages/signup/signup",
+    "pages/signin/signin",
     "pages/accounts/accounts",
-    "pages/course/course"
+    "pages/hanzicourse/hanzicourse"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,25 +21,25 @@
     "navigationStyle": "custom"
   },
   "tabBar": {
-    "selectedColor": "#f00",
+    "selectedColor": "#123425",
     "list": [
       {
         "pagePath": "pages/home/homepage",
         "text": "首页",
         "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-selected.png"
-      },
-      {
-        "pagePath": "pages/accounts/accounts",
-        "text": "我的",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my-selected.png"
+        "selectedIconPath": "images/home-b.png"
       },
       {
         "pagePath": "pages/course/course",
         "text": "课程",
         "iconPath": "images/wishlist.png",
-        "selectedIconPath": "images/wishlist-selected.png"
+        "selectedIconPath": "images/courselist-b.png"
+      },
+      {
+        "pagePath": "pages/accounts/accounts",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-b.png"
       }
     ]
   },

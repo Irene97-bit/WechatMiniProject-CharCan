@@ -1,0 +1,50 @@
+/* pages/favorite/favorite.wxss */
+.topbar{
+  background-image: url(http://2000022764.zhangqx.com:9999/images/bg-s.png);
+  width: 375px;
+  height: 198px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.container{
+  width: 375px;
+  height: 100px;
+  background-color: white;
+  border-radius: 40px;
+  margin-top:-70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_account{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+}
+.container_image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container_text{
+  font-size: 30px;
+  text-align: center;
+  color:rgb(67,106,121);
+  font-weight: bolder;
+  margin-right: 50px;
+}
+
+.mainpage{
+  width: 375px;
+  display: flex;
+  justify-content: center;
+}
+.userinfo{
+  width: 300px;
+}

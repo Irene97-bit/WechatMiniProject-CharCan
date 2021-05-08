@@ -7,13 +7,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   
-  
-
 
   /**
    * 页面的初始数据
    */
   data: {
+    isCollect: false,
     hsk1:[], 
   },
 
@@ -24,18 +23,59 @@ Page({
     var _this = this;
     //1、引用数据库
     wx.request({
-      url: 'http://2000022764.zhangqx.com/HSK1',//json数据地址
+      url: 'https://2000022764.zhangqx.com/HSK1',//json数据地址
       headers: {
         'Content-Type': 'application/json'
       },     
       success: res => {
         console.log(res.data)   
         this.setData({
-          hsk1: res.data
+          hsk1: res.data.data
         })
       }
     })
   },
+
+  more:function(options){
+    wx.navigateTo({
+      url: '../practise/practise',
+    })
+    console.log(this.data.hsk1[1])
+  },
+  star: function(event) {       
+    let index=event.currentTarget.dataset.index;
+    console.log(index);
+    wx.request({
+      url: 'https://2000022764.zhangqx.com/favorite',
+      method:'POST',
+      data: {
+        openid: wx.getStorageSync('data').openid,
+        favorite: this.data.hsk1[index].hanzi,
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success (res) {
+        console.log(res.status)
+        var bol = this.data.isCollect; // 获取状态
+    
+        this.setData({
+        isCollect:!bol // 改变状态
+        })
+        
+      }
+    })
+  },
+
+  toDetail:(e)=>{
+    let index=e.currentTarget.dataset.index;
+    console.log(e.currentTarget.dataset.index);
+    wx.navigateTo({
+      url: '../practise/practise?index='+index
+    })
+
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -86,20 +126,5 @@ Page({
 
   },
 
-  favorite: function(event) {       
-    wx.request({
-      url: 'https://2000022764.zhangqx.com/favorite',
-      method:'POST',
-      data: {
-        openid: wx.getStorageSync('data').openid,
-        favorite: '我'
-      },
-      header: {
-        'content-type': 'application/json'
-      },
-      success (res) {
-        
-      }
-    })
-  },
+
 })

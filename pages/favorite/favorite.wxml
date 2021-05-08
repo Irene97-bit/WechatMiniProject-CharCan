@@ -1,0 +1,34 @@
+<!--pages/favorite/favorite.wxml-->
+<view class="topbar">
+</view>
+
+<view class="container">
+  <view class="container_account">
+    <view class="container_image"><open-data type="userAvatarUrl"></open-data></view>
+    <!--<view class="container_text"><open-data type="userNickName"></open-data></view>-->
+  </view>
+  <view class="container_text">收藏夹</view>
+</view>
+
+<view class="mainpage">
+    <view class="userinfo">
+
+        <!--<mp-cells title="个人信息">
+            <mp-cell value="选择字库" footer="HSK1级">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell value="目标完成" footer="30%">
+                <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+        </mp-cells>-->
+
+        <mp-cells wx:for="{{favorite}}" wx:key="index">
+            <mp-cell link bindtap ="toDetail" hover value="{{item.favorite}}"data-index="{{index}}">
+                <image slot="title" src="/images/nice.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+          
+        </mp-cells>
+
+    </view>
+</view>
+

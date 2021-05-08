@@ -1,29 +1,44 @@
 <!--pages/home/homepage.wxml-->
-<view class="topimage">
-      <image  class='imagesize' src="/images/bg.jpeg" ></image>
+<view  class='imagesize'>
+  <view class="cspace"></view>
+  <view  class="coverinfo">
+    <view class="info">
+      <view class="profile"><open-data class='userInfo' type="userAvatarUrl"></open-data></view>
+      <view class="more">
+      </view>
+    </view>
+  </view>
+  <view class="covercourse">
+    <view class="stroke">
+      <view class="coverphoto"><image class="coverphoto" src="/images/bihua.png"></image></view>
+    </view>
+    <view class="divide"></view>
+    <view class="hanzi" bindtap="toHanzi">
+      <view class="coverphoto"><image class="coverphoto" src="/images/hanzi.png" ></image></view>
+    </view>
+  </view>
+<!--<view class="covercourse">
+    <view class="page-section">
+      <view class="page-body-info display-aresa {{ loaded ? 'font-loaded' : '' }}">
+        <text wx:if="{{!loaded}}">Load {{ fontFamily }} 字体</text>
+        <text wx:else>{{ fontFamily }} 字体 is loaded</text>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="loadFontFace">加载字体</button>
+      </view>
+    </view>
+  </view>-->
+  <view class="coverpart">
+    <view class="part"><image class="partimage" bindtap="toHSK"src="/images/HSKhome.png"></image></view>
+    <view class="part"><image class="partimage" bindtap="tofav"src="/images/fav.png"></image></view>
+    <view class="part"><image class="partimage" src="/images/Daily.png"></image></view>
+    <view class="part"><image class="partimage" src="/images/morehome.png"></image></view>
+  </view>
+
+  <view class="waiting">更多功能开发中</view>
 </view>
 
-<cover-view  class="covertext">
-  CharCan
-</cover-view>
-
-<button bindtap = "explore">EXPLORE</button>
-
-  <!--<view class="page">
-    <view class="page__hd">
-        <view class="page__title">search</view>
-        <view class="page__desc">bar</view>
-    </view>
-    <view class="page__bd">
-        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
-    </view>
-</view>-->
-
-<view class="space">
-
-</view>
-
-<view class="page">
+<!--<view class="page">
 <mp-tabs 
   tabs="{{tabs}}" 
   activeTab="{{activeTab}}" 
@@ -44,7 +59,7 @@
     </view>
   </block>
 </mp-tabs>
-</view>
+</view>-->
 
 <!-- <view class="page">
     <view class="page__hd">

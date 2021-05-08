@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<view class="main">
+    <view class="svg-container">
+        <image bindtap='tapSvg' src='{{svgBase64}}' style="width: 100%;height:100%;"/>
+    </view>
+</view>
+<text>pages/detail/detail.wxml</text>

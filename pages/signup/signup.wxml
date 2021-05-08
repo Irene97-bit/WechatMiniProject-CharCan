@@ -1,0 +1,30 @@
+<!--pages/signup/signup.wxml-->
+<view class="topbar">
+<image class="topbar-image" src="/images/bg4.png"></image>
+<view class="slogan">Sign up for CharCan</view>
+</view>
+
+<view class="fl_form">
+<text>Username</text>
+<view class="text">
+  <input class="input" placeholder='请输入您的姓名' value="{{userName}}" bindinput="usernameInput" ></input>
+</view>
+</view>
+<view class="fl_form">
+  <text>Password</text>
+<view class="text">
+  <input class="input" placeholder='8+ characters' value="{{password}}" bindinput="passwordInput" ></input>
+</view>
+</view>
+<view class="fl_form">
+<button class="submit" bindtap="bindSubmit">create account</button>
+</view>
+
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+  </view>
+</view>
